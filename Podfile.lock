@@ -1,0 +1,16 @@
+PODS:
+  - Canvas (0.1)
+  - SVProgressHUD (1.0)
+  - URBMediaFocusViewController (0.5.1)
+
+DEPENDENCIES:
+  - Canvas (= 0.1)
+  - SVProgressHUD (= 1.0)
+  - URBMediaFocusViewController (= 0.5.1)
+
+SPEC CHECKSUMS:
+  Canvas: 1d94806aab1ef0486df719f80f47eccf40a08ae5
+  SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
+  URBMediaFocusViewController: b841d6ca429c8a25c29da4ffbb097dd7cb739cd5
+
+COCOAPODS: 0.29.0
