@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FGViewController : UIViewController
+@interface SBViewController : UIViewController
 
 @end

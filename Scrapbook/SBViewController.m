@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Finn Gaida. All rights reserved.
 //
 
-#import "FGViewController.h"
+#import "SBViewController.h"
 
-@interface FGViewController ()
+@interface SBViewController ()
 
 @end
 
-@implementation FGViewController
+@implementation SBViewController
 
 - (void)viewDidLoad
 {

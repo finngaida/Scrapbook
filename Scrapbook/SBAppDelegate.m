@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Finn Gaida. All rights reserved.
 //
 
-#import "FGAppDelegate.h"
+#import "SBAppDelegate.h"
 
-@implementation FGAppDelegate
+@implementation SBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
