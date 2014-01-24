@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SBViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *inputField;
+@property (weak, nonatomic) IBOutlet UILabel *outputlabel;
+- (IBAction)fetch:(id)sender;
+- (IBAction)send:(id)sender;
 
 @end

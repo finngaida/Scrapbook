@@ -21,7 +21,9 @@
 		CC06ABEC1892F7FE00E05422 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCE1892F7FD00E05422 /* UIKit.framework */; };
 		CC06ABF41892F7FE00E05422 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC06ABF21892F7FE00E05422 /* InfoPlist.strings */; };
 		CC06ABF61892F7FE00E05422 /* ScrapbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC06ABF51892F7FE00E05422 /* ScrapbookTests.m */; };
-		E8DDB93FDA6E49A7B7DD4A9A /* libPods-Scrapbook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 865D3656DA6D4784BFEBC9FA /* libPods-Scrapbook.a */; };
+		CC51E268189306310063DE24 /* icon7.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51E267189306310063DE24 /* icon7.png */; };
+		CC51E26B189307990063DE24 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CC51E269189307990063DE24 /* Podfile */; };
+		CC51E26C189307990063DE24 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = CC51E26A189307990063DE24 /* Podfile.lock */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		852E41C35DA44549A7436BFA /* Pods-Scrapbook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrapbook.xcconfig"; path = "Pods/Pods-Scrapbook.xcconfig"; sourceTree = "<group>"; };
-		865D3656DA6D4784BFEBC9FA /* libPods-Scrapbook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scrapbook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF6E6A92C554960B9123813 /* libPods-Scrapbook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scrapbook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA4881B9696450A9A4C7088 /* Pods-Scrapbook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrapbook.xcconfig"; path = "Pods/Pods-Scrapbook.xcconfig"; sourceTree = "<group>"; };
 		CC06ABC71892F7FD00E05422 /* Scrapbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrapbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC06ABCA1892F7FD00E05422 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CC06ABCC1892F7FD00E05422 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +58,10 @@
 		CC06ABF11892F7FE00E05422 /* ScrapbookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrapbookTests-Info.plist"; sourceTree = "<group>"; };
 		CC06ABF31892F7FE00E05422 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC06ABF51892F7FE00E05422 /* ScrapbookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrapbookTests.m; sourceTree = "<group>"; };
+		CC51E266189300C90063DE24 /* Scrapbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Scrapbook.entitlements; sourceTree = "<group>"; };
+		CC51E267189306310063DE24 /* icon7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon7.png; sourceTree = "<group>"; };
+		CC51E269189307990063DE24 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		CC51E26A189307990063DE24 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +72,6 @@
 				CC06ABCD1892F7FD00E05422 /* CoreGraphics.framework in Frameworks */,
 				CC06ABCF1892F7FD00E05422 /* UIKit.framework in Frameworks */,
 				CC06ABCB1892F7FD00E05422 /* Foundation.framework in Frameworks */,
-				E8DDB93FDA6E49A7B7DD4A9A /* libPods-Scrapbook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +95,7 @@
 				CC06ABEF1892F7FE00E05422 /* ScrapbookTests */,
 				CC06ABC91892F7FD00E05422 /* Frameworks */,
 				CC06ABC81892F7FD00E05422 /* Products */,
-				852E41C35DA44549A7436BFA /* Pods-Scrapbook.xcconfig */,
+				6AA4881B9696450A9A4C7088 /* Pods-Scrapbook.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +115,7 @@
 				CC06ABCC1892F7FD00E05422 /* CoreGraphics.framework */,
 				CC06ABCE1892F7FD00E05422 /* UIKit.framework */,
 				CC06ABE91892F7FE00E05422 /* XCTest.framework */,
-				865D3656DA6D4784BFEBC9FA /* libPods-Scrapbook.a */,
+				5CF6E6A92C554960B9123813 /* libPods-Scrapbook.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +123,10 @@
 		CC06ABD01892F7FD00E05422 /* Scrapbook */ = {
 			isa = PBXGroup;
 			children = (
+				CC51E269189307990063DE24 /* Podfile */,
+				CC51E26A189307990063DE24 /* Podfile.lock */,
+				CC51E267189306310063DE24 /* icon7.png */,
+				CC51E266189300C90063DE24 /* Scrapbook.entitlements */,
 				CC06ABD91892F7FD00E05422 /* SBAppDelegate.h */,
 				CC06ABDA1892F7FD00E05422 /* SBAppDelegate.m */,
 				CC06ABDC1892F7FD00E05422 /* Main.storyboard */,
@@ -208,6 +217,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Finn Gaida";
 				TargetAttributes = {
+					CC06ABC61892F7FD00E05422 = {
+						DevelopmentTeam = RF278284CD;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
 					CC06ABE71892F7FE00E05422 = {
 						TestTargetID = CC06ABC61892F7FD00E05422;
 					};
@@ -237,6 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC51E26C189307990063DE24 /* Podfile.lock in Resources */,
+				CC51E26B189307990063DE24 /* Podfile in Resources */,
+				CC51E268189306310063DE24 /* icon7.png in Resources */,
 				CC06ABE31892F7FD00E05422 /* Images.xcassets in Resources */,
 				CC06ABD51892F7FD00E05422 /* InfoPlist.strings in Resources */,
 				CC06ABDE1892F7FD00E05422 /* Main.storyboard in Resources */,
@@ -417,28 +437,36 @@
 		};
 		CC06ABFA1892F7FE00E05422 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 852E41C35DA44549A7436BFA /* Pods-Scrapbook.xcconfig */;
+			baseConfigurationReference = 6AA4881B9696450A9A4C7088 /* Pods-Scrapbook.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Scrapbook/Scrapbook.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scrapbook/Scrapbook-Prefix.pch";
 				INFOPLIST_FILE = "Scrapbook/Scrapbook-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		CC06ABFB1892F7FE00E05422 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 852E41C35DA44549A7436BFA /* Pods-Scrapbook.xcconfig */;
+			baseConfigurationReference = 6AA4881B9696450A9A4C7088 /* Pods-Scrapbook.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Scrapbook/Scrapbook.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scrapbook/Scrapbook-Prefix.pch";
 				INFOPLIST_FILE = "Scrapbook/Scrapbook-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
