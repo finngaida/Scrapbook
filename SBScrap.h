@@ -16,5 +16,6 @@
 @property (nonatomic, retain) NSString * body;
 @property (nonatomic, retain) NSString * tags;
 @property (nonatomic, retain) NSString * mediaURL;
+@property (nonatomic, retain) NSDate * dateAdded;
 
 @end

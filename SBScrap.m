@@ -15,5 +15,12 @@
 @dynamic body;
 @dynamic tags;
 @dynamic mediaURL;
+@dynamic dateAdded;
+
+- (void) awakeFromInsert {
+    if (self.dateAdded == nil) {
+        [self setDateAdded:[NSDate date]];
+    }
+}
 
 @end

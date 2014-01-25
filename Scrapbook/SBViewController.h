@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SBCoreDataViewController.h"
 
-@interface SBViewController : UIViewController
+@interface SBViewController : SBCoreDataViewController
+
 @property (weak, nonatomic) IBOutlet UITextField *inputField;
 @property (weak, nonatomic) IBOutlet UILabel *outputlabel;
+
 - (IBAction)fetch:(id)sender;
 - (IBAction)send:(id)sender;
 

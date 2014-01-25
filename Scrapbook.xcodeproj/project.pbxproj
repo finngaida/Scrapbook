@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		18D17A550C28491988F35CDE /* libPods-Scrapbook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF6E6A92C554960B9123813 /* libPods-Scrapbook.a */; };
 		50681FE61893FC47000331CB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50681FE41893FC47000331CB /* Model.xcdatamodeld */; };
-		50681FEF1893FD5E000331CB /* SBScrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 50681FEE1893FD5E000331CB /* SBScrap.m */; };
+		50681FF91893FFC8000331CB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50681FF81893FFC8000331CB /* CoreData.framework */; };
+		50681FFC1894011F000331CB /* SBCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50681FFB1894011F000331CB /* SBCoreDataViewController.m */; };
+		5068200318940477000331CB /* SBScrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 5068200218940477000331CB /* SBScrap.m */; };
 		CC06ABCB1892F7FD00E05422 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCA1892F7FD00E05422 /* Foundation.framework */; };
 		CC06ABCD1892F7FD00E05422 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCC1892F7FD00E05422 /* CoreGraphics.framework */; };
 		CC06ABCF1892F7FD00E05422 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCE1892F7FD00E05422 /* UIKit.framework */; };
@@ -40,8 +42,11 @@
 
 /* Begin PBXFileReference section */
 		50681FE51893FC47000331CB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		50681FED1893FD5E000331CB /* SBScrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBScrap.h; sourceTree = "<group>"; };
-		50681FEE1893FD5E000331CB /* SBScrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBScrap.m; sourceTree = "<group>"; };
+		50681FF81893FFC8000331CB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		50681FFA1894011F000331CB /* SBCoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCoreDataViewController.h; sourceTree = "<group>"; };
+		50681FFB1894011F000331CB /* SBCoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCoreDataViewController.m; sourceTree = "<group>"; };
+		5068200118940477000331CB /* SBScrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBScrap.h; sourceTree = "<group>"; };
+		5068200218940477000331CB /* SBScrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBScrap.m; sourceTree = "<group>"; };
 		5CF6E6A92C554960B9123813 /* libPods-Scrapbook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scrapbook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA4881B9696450A9A4C7088 /* Pods-Scrapbook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrapbook.xcconfig"; path = "Pods/Pods-Scrapbook.xcconfig"; sourceTree = "<group>"; };
 		CC06ABC71892F7FD00E05422 /* Scrapbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrapbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50681FF91893FFC8000331CB /* CoreData.framework in Frameworks */,
 				CC06ABCD1892F7FD00E05422 /* CoreGraphics.framework in Frameworks */,
 				CC06ABCF1892F7FD00E05422 /* UIKit.framework in Frameworks */,
 				CC06ABCB1892F7FD00E05422 /* Foundation.framework in Frameworks */,
@@ -122,6 +128,7 @@
 		50681FF31893FDA6000331CB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				50681FFD18940125000331CB /* Base Class */,
 				CC06ABDF1892F7FD00E05422 /* SBViewController.h */,
 				CC06ABE01892F7FD00E05422 /* SBViewController.m */,
 			);
@@ -141,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				50681FE41893FC47000331CB /* Model.xcdatamodeld */,
+				5068200118940477000331CB /* SBScrap.h */,
+				5068200218940477000331CB /* SBScrap.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -148,8 +157,6 @@
 		50681FF61893FDB4000331CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				50681FED1893FD5E000331CB /* SBScrap.h */,
-				50681FEE1893FD5E000331CB /* SBScrap.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -160,6 +167,15 @@
 				CC06ABDC1892F7FD00E05422 /* Main.storyboard */,
 			);
 			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		50681FFD18940125000331CB /* Base Class */ = {
+			isa = PBXGroup;
+			children = (
+				50681FFA1894011F000331CB /* SBCoreDataViewController.h */,
+				50681FFB1894011F000331CB /* SBCoreDataViewController.m */,
+			);
+			name = "Base Class";
 			sourceTree = "<group>";
 		};
 		CC06ABBE1892F7FD00E05422 = {
@@ -186,6 +202,7 @@
 		CC06ABC91892F7FD00E05422 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50681FF81893FFC8000331CB /* CoreData.framework */,
 				CC06ABCA1892F7FD00E05422 /* Foundation.framework */,
 				CC06ABCC1892F7FD00E05422 /* CoreGraphics.framework */,
 				CC06ABCE1892F7FD00E05422 /* UIKit.framework */,
@@ -384,7 +401,8 @@
 				CC06ABD71892F7FD00E05422 /* main.m in Sources */,
 				CC06ABDB1892F7FD00E05422 /* SBAppDelegate.m in Sources */,
 				CC06ABE11892F7FD00E05422 /* SBViewController.m in Sources */,
-				50681FEF1893FD5E000331CB /* SBScrap.m in Sources */,
+				50681FFC1894011F000331CB /* SBCoreDataViewController.m in Sources */,
+				5068200318940477000331CB /* SBScrap.m in Sources */,
 				50681FE61893FC47000331CB /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
