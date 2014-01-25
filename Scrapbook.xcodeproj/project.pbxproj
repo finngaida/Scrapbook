@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D17A550C28491988F35CDE /* libPods-Scrapbook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF6E6A92C554960B9123813 /* libPods-Scrapbook.a */; };
+		50681FE61893FC47000331CB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50681FE41893FC47000331CB /* Model.xcdatamodeld */; };
+		50681FEF1893FD5E000331CB /* SBScrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 50681FEE1893FD5E000331CB /* SBScrap.m */; };
 		CC06ABCB1892F7FD00E05422 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCA1892F7FD00E05422 /* Foundation.framework */; };
 		CC06ABCD1892F7FD00E05422 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCC1892F7FD00E05422 /* CoreGraphics.framework */; };
 		CC06ABCF1892F7FD00E05422 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCE1892F7FD00E05422 /* UIKit.framework */; };
@@ -21,7 +24,6 @@
 		CC06ABEC1892F7FE00E05422 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCE1892F7FD00E05422 /* UIKit.framework */; };
 		CC06ABF41892F7FE00E05422 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC06ABF21892F7FE00E05422 /* InfoPlist.strings */; };
 		CC06ABF61892F7FE00E05422 /* ScrapbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC06ABF51892F7FE00E05422 /* ScrapbookTests.m */; };
-		CC51E268189306310063DE24 /* icon7.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51E267189306310063DE24 /* icon7.png */; };
 		CC51E26B189307990063DE24 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CC51E269189307990063DE24 /* Podfile */; };
 		CC51E26C189307990063DE24 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = CC51E26A189307990063DE24 /* Podfile.lock */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50681FE51893FC47000331CB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		50681FED1893FD5E000331CB /* SBScrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBScrap.h; sourceTree = "<group>"; };
+		50681FEE1893FD5E000331CB /* SBScrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBScrap.m; sourceTree = "<group>"; };
 		5CF6E6A92C554960B9123813 /* libPods-Scrapbook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scrapbook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA4881B9696450A9A4C7088 /* Pods-Scrapbook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrapbook.xcconfig"; path = "Pods/Pods-Scrapbook.xcconfig"; sourceTree = "<group>"; };
 		CC06ABC71892F7FD00E05422 /* Scrapbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrapbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,8 +64,7 @@
 		CC06ABF31892F7FE00E05422 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC06ABF51892F7FE00E05422 /* ScrapbookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrapbookTests.m; sourceTree = "<group>"; };
 		CC51E266189300C90063DE24 /* Scrapbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Scrapbook.entitlements; sourceTree = "<group>"; };
-		CC51E267189306310063DE24 /* icon7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon7.png; sourceTree = "<group>"; };
-		CC51E269189307990063DE24 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		CC51E269189307990063DE24 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CC51E26A189307990063DE24 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -72,6 +76,7 @@
 				CC06ABCD1892F7FD00E05422 /* CoreGraphics.framework in Frameworks */,
 				CC06ABCF1892F7FD00E05422 /* UIKit.framework in Frameworks */,
 				CC06ABCB1892F7FD00E05422 /* Foundation.framework in Frameworks */,
+				18D17A550C28491988F35CDE /* libPods-Scrapbook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +93,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50681FF01893FD7C000331CB /* Podfiles */ = {
+			isa = PBXGroup;
+			children = (
+				CC51E269189307990063DE24 /* Podfile */,
+				CC51E26A189307990063DE24 /* Podfile.lock */,
+			);
+			name = Podfiles;
+			sourceTree = "<group>";
+		};
+		50681FF11893FD95000331CB /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				CC51E266189300C90063DE24 /* Scrapbook.entitlements */,
+			);
+			name = Entitlements;
+			sourceTree = "<group>";
+		};
+		50681FF21893FD9E000331CB /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CC06ABD91892F7FD00E05422 /* SBAppDelegate.h */,
+				CC06ABDA1892F7FD00E05422 /* SBAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		50681FF31893FDA6000331CB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC06ABDF1892F7FD00E05422 /* SBViewController.h */,
+				CC06ABE01892F7FD00E05422 /* SBViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		50681FF41893FDAD000331CB /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				50681FF61893FDB4000331CB /* Models */,
+				50681FF51893FDB0000331CB /* Model */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		50681FF51893FDB0000331CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50681FE41893FC47000331CB /* Model.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		50681FF61893FDB4000331CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50681FED1893FD5E000331CB /* SBScrap.h */,
+				50681FEE1893FD5E000331CB /* SBScrap.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		50681FF71893FDBB000331CB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CC06ABDC1892F7FD00E05422 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
 		CC06ABBE1892F7FD00E05422 = {
 			isa = PBXGroup;
 			children = (
+				50681FF41893FDAD000331CB /* Core Data */,
 				CC06ABD01892F7FD00E05422 /* Scrapbook */,
 				CC06ABEF1892F7FE00E05422 /* ScrapbookTests */,
 				CC06ABC91892F7FD00E05422 /* Frameworks */,
@@ -123,15 +198,8 @@
 		CC06ABD01892F7FD00E05422 /* Scrapbook */ = {
 			isa = PBXGroup;
 			children = (
-				CC51E269189307990063DE24 /* Podfile */,
-				CC51E26A189307990063DE24 /* Podfile.lock */,
-				CC51E267189306310063DE24 /* icon7.png */,
-				CC51E266189300C90063DE24 /* Scrapbook.entitlements */,
-				CC06ABD91892F7FD00E05422 /* SBAppDelegate.h */,
-				CC06ABDA1892F7FD00E05422 /* SBAppDelegate.m */,
-				CC06ABDC1892F7FD00E05422 /* Main.storyboard */,
-				CC06ABDF1892F7FD00E05422 /* SBViewController.h */,
-				CC06ABE01892F7FD00E05422 /* SBViewController.m */,
+				50681FF21893FD9E000331CB /* App Delegate */,
+				50681FF31893FDA6000331CB /* View Controllers */,
 				CC06ABE21892F7FD00E05422 /* Images.xcassets */,
 				CC06ABD11892F7FD00E05422 /* Supporting Files */,
 			);
@@ -141,10 +209,13 @@
 		CC06ABD11892F7FD00E05422 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50681FF71893FDBB000331CB /* Storyboard */,
 				CC06ABD21892F7FD00E05422 /* Scrapbook-Info.plist */,
 				CC06ABD31892F7FD00E05422 /* InfoPlist.strings */,
 				CC06ABD61892F7FD00E05422 /* main.m */,
 				CC06ABD81892F7FD00E05422 /* Scrapbook-Prefix.pch */,
+				50681FF11893FD95000331CB /* Entitlements */,
+				50681FF01893FD7C000331CB /* Podfiles */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -256,7 +327,6 @@
 			files = (
 				CC51E26C189307990063DE24 /* Podfile.lock in Resources */,
 				CC51E26B189307990063DE24 /* Podfile in Resources */,
-				CC51E268189306310063DE24 /* icon7.png in Resources */,
 				CC06ABE31892F7FD00E05422 /* Images.xcassets in Resources */,
 				CC06ABD51892F7FD00E05422 /* InfoPlist.strings in Resources */,
 				CC06ABDE1892F7FD00E05422 /* Main.storyboard in Resources */,
@@ -314,6 +384,8 @@
 				CC06ABD71892F7FD00E05422 /* main.m in Sources */,
 				CC06ABDB1892F7FD00E05422 /* SBAppDelegate.m in Sources */,
 				CC06ABE11892F7FD00E05422 /* SBViewController.m in Sources */,
+				50681FEF1893FD5E000331CB /* SBScrap.m in Sources */,
+				50681FE61893FC47000331CB /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +616,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		50681FE41893FC47000331CB /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				50681FE51893FC47000331CB /* Model.xcdatamodel */,
+			);
+			currentVersion = 50681FE51893FC47000331CB /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CC06ABBF1892F7FD00E05422 /* Project object */;
 }
