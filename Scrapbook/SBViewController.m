@@ -32,7 +32,7 @@
     [super viewDidLoad];
     
     NSLog(@"%@", self.navigationController);
-
+    [self.fetchedResultsController performFetch:nil];
     // testing iClound functionality
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(storeDidChange:) name:NSUbiquitousKeyValueStoreDidChangeExternallyNotification object:nil];
     store = [NSUbiquitousKeyValueStore defaultStore];

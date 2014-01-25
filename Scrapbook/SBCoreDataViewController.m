@@ -28,13 +28,13 @@
 
 - (NSFetchRequest *) defaultFetchRequest {
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Scrap"];
-    [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"dateAdded" ascending:YES]]];
+    [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"dateAdded" ascending:NO]]];
     return fetchRequest;
 }
 
 - (NSFetchedResultsController *) fetchedResultsController {
     if (_fetchedResultsController == nil) {
-        _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:[self defaultFetchRequest] managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"cache"];
+        _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:[self defaultFetchRequest] managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
         [_fetchedResultsController setDelegate:self];
     }
     return _fetchedResultsController;
@@ -140,6 +140,7 @@
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     id <NSFetchedResultsSectionInfo> sectionInfo = self.fetchedResultsController.sections[section];
+    NSLog(@"%d", [sectionInfo numberOfObjects]);
     return [sectionInfo numberOfObjects];
 }
 
