@@ -7,6 +7,7 @@
 //
 
 #import "SBAppDelegate.h"
+#import "SBViewController.h"
 
 @implementation SBAppDelegate
 @synthesize managedObjectContext = _managedObjectContext;
@@ -16,7 +17,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[SBViewController alloc] initWithStyle:UITableViewStylePlain andContext:self.managedObjectContext]];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

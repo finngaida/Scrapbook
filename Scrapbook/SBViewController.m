@@ -28,17 +28,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"%@", self.navigationController);
 
     // testing iClound functionality
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(storeDidChange:) name:NSUbiquitousKeyValueStoreDidChangeExternallyNotification object:nil];
     store = [NSUbiquitousKeyValueStore defaultStore];
     [store synchronize];
     
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar"] forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    //[UINavigationBar appearance].barStyle = UIBarStyleBlackTranslucent;
-    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:(167.0/225.0) green:(28.0/255.0) blue:(87.0/255.0) alpha:1]];
-   // [UINavigationBar appearance].translucent = NO;
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:(167.0/255.0) green:(28.0/255.0) blue:(87.0/255.0) alpha:1]];
+    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:(167.0/255.0) green:(28.0/255.0) blue:(87.0/255.0) alpha:1]];
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
     title.backgroundColor = [UIColor clearColor];
     title.textColor = [UIColor whiteColor];
@@ -59,7 +59,7 @@
 }
 
 - (void)showAboutScreen {
-    SBAboutViewController *about = [self.storyboard instantiateViewControllerWithIdentifier:@"about"];
+    SBAboutViewController *about = [[SBAboutViewController alloc] init];
     [self.navigationController pushViewController:about animated:YES];
 }
 
