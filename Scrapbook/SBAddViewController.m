@@ -64,7 +64,7 @@
     SBScrap *scrap = [NSEntityDescription insertNewObjectForEntityForName:@"Scrap" inManagedObjectContext:self.context];
     [scrap setBody:self.textView.text];
     [scrap setTitle:self.textField.text];
-    [self.context save:nil];
+    self.addedItemBlock(scrap);
 }
 
 - (BOOL) textFieldShouldEndEditing:(UITextField *)textField {

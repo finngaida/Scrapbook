@@ -8,6 +8,7 @@
 
 #import "SBViewController.h"
 #import "SBScrap.h"
+#import "SBAboutViewController.h"
 
 @implementation SBViewController {
     NSUbiquitousKeyValueStore *store;
@@ -57,11 +58,16 @@
 - (void)showAddScreen {
     SBAddViewController *add = [[SBAddViewController alloc] init];
     [add setContext:self.managedObjectContext];
+    [add setAddedItemBlock:^(SBScrap *scrap) {
+        [self insertScrap:scrap];
+        NSLog(@"insert");
+    }];
     [self.navigationController pushViewController:add animated:YES];
 }
 
 - (void)showAboutScreen {
     SBAboutViewController *about = [[SBAboutViewController alloc] init];
+//    [about set
     [self.navigationController pushViewController:about animated:YES];
 }
 

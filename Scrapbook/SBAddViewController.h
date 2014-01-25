@@ -15,4 +15,7 @@
 @property (nonatomic, strong) UITextView *textView;
 @property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, strong) NSManagedObjectContext *context;
+
+@property (nonatomic, strong) void (^addedItemBlock)(SBScrap * scrap);
+
 @end
