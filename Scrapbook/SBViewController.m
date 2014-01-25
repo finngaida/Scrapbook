@@ -39,7 +39,7 @@
     [store synchronize];
     
     [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:(167.0/255.0) green:(28.0/255.0) blue:(87.0/255.0) alpha:1]];
-    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:(167.0/255.0) green:(28.0/255.0) blue:(87.0/255.0) alpha:1]];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
     title.backgroundColor = [UIColor clearColor];
