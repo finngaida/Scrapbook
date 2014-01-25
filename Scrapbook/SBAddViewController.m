@@ -7,6 +7,7 @@
 //
 
 #import "SBAddViewController.h"
+#import "SBScrap.h"
 
 @implementation SBAddViewController
 
@@ -36,6 +37,39 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    UITextField *title = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
+    [title setPlaceholder:@"Enter the title"];
+    [title setDelegate:self];
+    [title setBackgroundColor:[UIColor blueColor]];
+    [self.view addSubview:title];
+    self.textField = title;
+    
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(title.frame) + 10, 200, 300)];
+    [textView setDelegate:self];
+    [textView setBackgroundColor:[UIColor blueColor]];
+    [self.view addSubview:textView];
+    self.textView = textView;
+    
+    UIButton *save = [UIButton buttonWithType:UIButtonTypeCustom];
+    [save setFrame:CGRectMake(textView.frame.size.width + 10, 40, 150, 40)];
+    [save setTitle:@"Save" forState:UIControlStateNormal];
+    [save setBackgroundColor:[UIColor greenColor]];
+    [save addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:save];
+    
+}
+
+- (void) test {
+    SBScrap *scrap = [NSEntityDescription insertNewObjectForEntityForName:@"Scrap" inManagedObjectContext:self.context];
+    [scrap setBody:self.textView.text];
+    [scrap setTitle:self.textField.text];
+    [self.context save:nil];
+}
+
+- (BOOL) textFieldShouldEndEditing:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning

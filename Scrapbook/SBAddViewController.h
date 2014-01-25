@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @class SBScrap;
-@interface SBAddViewController : UIViewController
+@interface SBAddViewController : UIViewController <UITextFieldDelegate>
 
 @property (nonatomic) SBScrap *scrap;
-
+@property (nonatomic, strong) UITextView *textView;
+@property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, strong) NSManagedObjectContext *context;
 @end

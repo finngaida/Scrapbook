@@ -7,6 +7,7 @@
 //
 
 #import "SBViewController.h"
+#import "SBScrap.h"
 
 @implementation SBViewController {
     NSUbiquitousKeyValueStore *store;
@@ -55,6 +56,7 @@
 
 - (void)showAddScreen {
     SBAddViewController *add = [[SBAddViewController alloc] init];
+    [add setContext:self.managedObjectContext];
     [self.navigationController pushViewController:add animated:YES];
 }
 
@@ -86,6 +88,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     
+    SBScrap *scrap = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    [cell.textLabel setText:[scrap body]];
     // cell setup
     
     return cell;
