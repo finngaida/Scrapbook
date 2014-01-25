@@ -12,6 +12,20 @@
     NSUbiquitousKeyValueStore *store;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    
+    NSManagedObjectContext *context = context = [(SBAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    if (self = [super initWithStyle:UITableViewStylePlain andContext:context]) {
+        
+        
+        
+        return self;
+    }
+    
+    return self;
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -20,10 +34,11 @@
     store = [NSUbiquitousKeyValueStore defaultStore];
     [store synchronize];
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"bar"] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
-    [self.navigationController.navigationBar setBackgroundColor:[UIColor redColor]];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"bar"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    //[UINavigationBar appearance].barStyle = UIBarStyleBlackTranslucent;
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:(167.0/225.0) green:(28.0/255.0) blue:(87.0/255.0) alpha:1]];
+   // [UINavigationBar appearance].translucent = NO;
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
     title.backgroundColor = [UIColor clearColor];
     title.textColor = [UIColor whiteColor];
@@ -66,14 +81,6 @@
     if ([[NSUbiquitousKeyValueStore defaultStore] synchronize] == YES) {
         [[[UIAlertView alloc] initWithTitle:@"Such Success" message:@"Many congrats" delegate:nil cancelButtonTitle:@"wow" otherButtonTitles:nil, nil] show];
     }
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 15; // [objects count]
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

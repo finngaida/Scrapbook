@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF31E7DFD0404FF1AC7893BF /* libPods-Scrapbook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF6E6A92C554960B9123813 /* libPods-Scrapbook.a */; };
 		CC06ABCB1892F7FD00E05422 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCA1892F7FD00E05422 /* Foundation.framework */; };
 		CC06ABCD1892F7FD00E05422 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCC1892F7FD00E05422 /* CoreGraphics.framework */; };
 		CC06ABCF1892F7FD00E05422 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCE1892F7FD00E05422 /* UIKit.framework */; };
 		CC06ABD51892F7FD00E05422 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC06ABD31892F7FD00E05422 /* InfoPlist.strings */; };
 		CC06ABD71892F7FD00E05422 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC06ABD61892F7FD00E05422 /* main.m */; };
-		CC06ABDB1892F7FD00E05422 /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC06ABDA1892F7FD00E05422 /* SBAppDelegate.m */; };
 		CC06ABDE1892F7FD00E05422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC06ABDC1892F7FD00E05422 /* Main.storyboard */; };
 		CC06ABE11892F7FD00E05422 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC06ABE01892F7FD00E05422 /* SBViewController.m */; };
 		CC06ABE31892F7FD00E05422 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC06ABE21892F7FD00E05422 /* Images.xcassets */; };
@@ -25,6 +25,12 @@
 		CC0B0F1F189405DD00A3EF01 /* finn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CC0B0F1C189405DD00A3EF01 /* finn.jpeg */; };
 		CC0B0F20189405DD00A3EF01 /* james.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CC0B0F1D189405DD00A3EF01 /* james.jpeg */; };
 		CC0B0F21189405DD00A3EF01 /* max.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CC0B0F1E189405DD00A3EF01 /* max.jpeg */; };
+		CC0B0F261894140500A3EF01 /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0B0F231894140500A3EF01 /* SBAppDelegate.m */; };
+		CC0B0F271894140500A3EF01 /* SBCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0B0F251894140500A3EF01 /* SBCoreDataViewController.m */; };
+		CC0B0F2C1894141C00A3EF01 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC0B0F281894141C00A3EF01 /* Model.xcdatamodeld */; };
+		CC0B0F2D1894141C00A3EF01 /* SBScrap.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0B0F2B1894141C00A3EF01 /* SBScrap.m */; };
+		CC0B0F2F1894145500A3EF01 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0B0F2E1894145500A3EF01 /* CoreData.framework */; };
+		CC0B0F311894179900A3EF01 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC0B0F301894179900A3EF01 /* icon.png */; };
 		CC2B4B881894003F00B79EA0 /* SBAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2B4B871894003F00B79EA0 /* SBAddViewController.m */; };
 		CC2B4B8A189400B500B79EA0 /* Brain Flower Euro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2B4B89189400B500B79EA0 /* Brain Flower Euro.ttf */; };
 		CC51E268189306310063DE24 /* icon7.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51E267189306310063DE24 /* icon7.png */; };
@@ -53,8 +59,6 @@
 		CC06ABD41892F7FD00E05422 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC06ABD61892F7FD00E05422 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC06ABD81892F7FD00E05422 /* Scrapbook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scrapbook-Prefix.pch"; sourceTree = "<group>"; };
-		CC06ABD91892F7FD00E05422 /* SBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
-		CC06ABDA1892F7FD00E05422 /* SBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAppDelegate.m; sourceTree = "<group>"; };
 		CC06ABDD1892F7FD00E05422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC06ABDF1892F7FD00E05422 /* SBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
 		CC06ABE01892F7FD00E05422 /* SBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
@@ -69,6 +73,15 @@
 		CC0B0F1C189405DD00A3EF01 /* finn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = finn.jpeg; sourceTree = "<group>"; };
 		CC0B0F1D189405DD00A3EF01 /* james.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = james.jpeg; sourceTree = "<group>"; };
 		CC0B0F1E189405DD00A3EF01 /* max.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = max.jpeg; sourceTree = "<group>"; };
+		CC0B0F221894140500A3EF01 /* SBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
+		CC0B0F231894140500A3EF01 /* SBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAppDelegate.m; sourceTree = "<group>"; };
+		CC0B0F241894140500A3EF01 /* SBCoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCoreDataViewController.h; sourceTree = "<group>"; };
+		CC0B0F251894140500A3EF01 /* SBCoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCoreDataViewController.m; sourceTree = "<group>"; };
+		CC0B0F291894141C00A3EF01 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CC0B0F2A1894141C00A3EF01 /* SBScrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBScrap.h; sourceTree = "<group>"; };
+		CC0B0F2B1894141C00A3EF01 /* SBScrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBScrap.m; sourceTree = "<group>"; };
+		CC0B0F2E1894145500A3EF01 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CC0B0F301894179900A3EF01 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		CC2B4B861894003F00B79EA0 /* SBAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAddViewController.h; sourceTree = "<group>"; };
 		CC2B4B871894003F00B79EA0 /* SBAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAddViewController.m; sourceTree = "<group>"; };
 		CC2B4B89189400B500B79EA0 /* Brain Flower Euro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Brain Flower Euro.ttf"; sourceTree = "<group>"; };
@@ -83,9 +96,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0B0F2F1894145500A3EF01 /* CoreData.framework in Frameworks */,
 				CC06ABCD1892F7FD00E05422 /* CoreGraphics.framework in Frameworks */,
 				CC06ABCF1892F7FD00E05422 /* UIKit.framework in Frameworks */,
 				CC06ABCB1892F7FD00E05422 /* Foundation.framework in Frameworks */,
+				AF31E7DFD0404FF1AC7893BF /* libPods-Scrapbook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +140,7 @@
 		CC06ABC91892F7FD00E05422 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC0B0F2E1894145500A3EF01 /* CoreData.framework */,
 				CC06ABCA1892F7FD00E05422 /* Foundation.framework */,
 				CC06ABCC1892F7FD00E05422 /* CoreGraphics.framework */,
 				CC06ABCE1892F7FD00E05422 /* UIKit.framework */,
@@ -143,10 +159,16 @@
 				CC2B4B89189400B500B79EA0 /* Brain Flower Euro.ttf */,
 				CC51E269189307990063DE24 /* Podfile */,
 				CC51E26A189307990063DE24 /* Podfile.lock */,
+				CC0B0F301894179900A3EF01 /* icon.png */,
 				CC51E267189306310063DE24 /* icon7.png */,
+				CC0B0F281894141C00A3EF01 /* Model.xcdatamodeld */,
+				CC0B0F2A1894141C00A3EF01 /* SBScrap.h */,
+				CC0B0F2B1894141C00A3EF01 /* SBScrap.m */,
 				CC51E266189300C90063DE24 /* Scrapbook.entitlements */,
-				CC06ABD91892F7FD00E05422 /* SBAppDelegate.h */,
-				CC06ABDA1892F7FD00E05422 /* SBAppDelegate.m */,
+				CC0B0F221894140500A3EF01 /* SBAppDelegate.h */,
+				CC0B0F231894140500A3EF01 /* SBAppDelegate.m */,
+				CC0B0F241894140500A3EF01 /* SBCoreDataViewController.h */,
+				CC0B0F251894140500A3EF01 /* SBCoreDataViewController.m */,
 				CC06ABDC1892F7FD00E05422 /* Main.storyboard */,
 				CC06ABDF1892F7FD00E05422 /* SBViewController.h */,
 				CC06ABE01892F7FD00E05422 /* SBViewController.m */,
@@ -282,6 +304,7 @@
 				CC51E26C189307990063DE24 /* Podfile.lock in Resources */,
 				CC51E26B189307990063DE24 /* Podfile in Resources */,
 				CC2B4B8A189400B500B79EA0 /* Brain Flower Euro.ttf in Resources */,
+				CC0B0F311894179900A3EF01 /* icon.png in Resources */,
 				CC51E268189306310063DE24 /* icon7.png in Resources */,
 				CC06ABE31892F7FD00E05422 /* Images.xcassets in Resources */,
 				CC06ABD51892F7FD00E05422 /* InfoPlist.strings in Resources */,
@@ -337,9 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0B0F271894140500A3EF01 /* SBCoreDataViewController.m in Sources */,
 				CC06ABD71892F7FD00E05422 /* main.m in Sources */,
+				CC0B0F2D1894141C00A3EF01 /* SBScrap.m in Sources */,
 				CC2B4B881894003F00B79EA0 /* SBAddViewController.m in Sources */,
-				CC06ABDB1892F7FD00E05422 /* SBAppDelegate.m in Sources */,
+				CC0B0F2C1894141C00A3EF01 /* Model.xcdatamodeld in Sources */,
+				CC0B0F261894140500A3EF01 /* SBAppDelegate.m in Sources */,
 				CC0B0F1B1894031D00A3EF01 /* SBAboutViewController.m in Sources */,
 				CC06ABE11892F7FD00E05422 /* SBViewController.m in Sources */,
 			);
@@ -572,6 +598,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC0B0F281894141C00A3EF01 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC0B0F291894141C00A3EF01 /* Model.xcdatamodel */,
+			);
+			currentVersion = CC0B0F291894141C00A3EF01 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CC06ABBF1892F7FD00E05422 /* Project object */;
 }

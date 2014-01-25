@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "SBAboutViewController.h"
+#import "SBAppDelegate.h"
 #import "SBAddViewController.h"
+#import "SBCoreDataViewController.h"
 
-@interface SBViewController : UIViewController <UITableViewDataSource,  UITableViewDelegate>
+@interface SBViewController : SBCoreDataViewController
 @property (weak, nonatomic) IBOutlet UITextField *inputField;
 @property (weak, nonatomic) IBOutlet UILabel *outputlabel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
