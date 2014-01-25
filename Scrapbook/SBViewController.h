@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SBAboutViewController.h"
+#import "SBAddViewController.h"
 
 @interface SBViewController : UIViewController <UITableViewDataSource,  UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *inputField;

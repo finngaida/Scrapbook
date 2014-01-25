@@ -21,6 +21,12 @@
 		CC06ABEC1892F7FE00E05422 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC06ABCE1892F7FD00E05422 /* UIKit.framework */; };
 		CC06ABF41892F7FE00E05422 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC06ABF21892F7FE00E05422 /* InfoPlist.strings */; };
 		CC06ABF61892F7FE00E05422 /* ScrapbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC06ABF51892F7FE00E05422 /* ScrapbookTests.m */; };
+		CC0B0F1B1894031D00A3EF01 /* SBAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0B0F1A1894031D00A3EF01 /* SBAboutViewController.m */; };
+		CC0B0F1F189405DD00A3EF01 /* finn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CC0B0F1C189405DD00A3EF01 /* finn.jpeg */; };
+		CC0B0F20189405DD00A3EF01 /* james.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CC0B0F1D189405DD00A3EF01 /* james.jpeg */; };
+		CC0B0F21189405DD00A3EF01 /* max.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CC0B0F1E189405DD00A3EF01 /* max.jpeg */; };
+		CC2B4B881894003F00B79EA0 /* SBAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2B4B871894003F00B79EA0 /* SBAddViewController.m */; };
+		CC2B4B8A189400B500B79EA0 /* Brain Flower Euro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2B4B89189400B500B79EA0 /* Brain Flower Euro.ttf */; };
 		CC51E268189306310063DE24 /* icon7.png in Resources */ = {isa = PBXBuildFile; fileRef = CC51E267189306310063DE24 /* icon7.png */; };
 		CC51E26B189307990063DE24 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CC51E269189307990063DE24 /* Podfile */; };
 		CC51E26C189307990063DE24 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = CC51E26A189307990063DE24 /* Podfile.lock */; };
@@ -58,6 +64,14 @@
 		CC06ABF11892F7FE00E05422 /* ScrapbookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrapbookTests-Info.plist"; sourceTree = "<group>"; };
 		CC06ABF31892F7FE00E05422 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC06ABF51892F7FE00E05422 /* ScrapbookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrapbookTests.m; sourceTree = "<group>"; };
+		CC0B0F191894031D00A3EF01 /* SBAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAboutViewController.h; sourceTree = "<group>"; };
+		CC0B0F1A1894031D00A3EF01 /* SBAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAboutViewController.m; sourceTree = "<group>"; };
+		CC0B0F1C189405DD00A3EF01 /* finn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = finn.jpeg; sourceTree = "<group>"; };
+		CC0B0F1D189405DD00A3EF01 /* james.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = james.jpeg; sourceTree = "<group>"; };
+		CC0B0F1E189405DD00A3EF01 /* max.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = max.jpeg; sourceTree = "<group>"; };
+		CC2B4B861894003F00B79EA0 /* SBAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAddViewController.h; sourceTree = "<group>"; };
+		CC2B4B871894003F00B79EA0 /* SBAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAddViewController.m; sourceTree = "<group>"; };
+		CC2B4B89189400B500B79EA0 /* Brain Flower Euro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Brain Flower Euro.ttf"; sourceTree = "<group>"; };
 		CC51E266189300C90063DE24 /* Scrapbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Scrapbook.entitlements; sourceTree = "<group>"; };
 		CC51E267189306310063DE24 /* icon7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon7.png; sourceTree = "<group>"; };
 		CC51E269189307990063DE24 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
@@ -123,6 +137,10 @@
 		CC06ABD01892F7FD00E05422 /* Scrapbook */ = {
 			isa = PBXGroup;
 			children = (
+				CC0B0F1C189405DD00A3EF01 /* finn.jpeg */,
+				CC0B0F1D189405DD00A3EF01 /* james.jpeg */,
+				CC0B0F1E189405DD00A3EF01 /* max.jpeg */,
+				CC2B4B89189400B500B79EA0 /* Brain Flower Euro.ttf */,
 				CC51E269189307990063DE24 /* Podfile */,
 				CC51E26A189307990063DE24 /* Podfile.lock */,
 				CC51E267189306310063DE24 /* icon7.png */,
@@ -132,6 +150,10 @@
 				CC06ABDC1892F7FD00E05422 /* Main.storyboard */,
 				CC06ABDF1892F7FD00E05422 /* SBViewController.h */,
 				CC06ABE01892F7FD00E05422 /* SBViewController.m */,
+				CC2B4B861894003F00B79EA0 /* SBAddViewController.h */,
+				CC2B4B871894003F00B79EA0 /* SBAddViewController.m */,
+				CC0B0F191894031D00A3EF01 /* SBAboutViewController.h */,
+				CC0B0F1A1894031D00A3EF01 /* SBAboutViewController.m */,
 				CC06ABE21892F7FD00E05422 /* Images.xcassets */,
 				CC06ABD11892F7FD00E05422 /* Supporting Files */,
 			);
@@ -254,8 +276,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0B0F21189405DD00A3EF01 /* max.jpeg in Resources */,
+				CC0B0F1F189405DD00A3EF01 /* finn.jpeg in Resources */,
+				CC0B0F20189405DD00A3EF01 /* james.jpeg in Resources */,
 				CC51E26C189307990063DE24 /* Podfile.lock in Resources */,
 				CC51E26B189307990063DE24 /* Podfile in Resources */,
+				CC2B4B8A189400B500B79EA0 /* Brain Flower Euro.ttf in Resources */,
 				CC51E268189306310063DE24 /* icon7.png in Resources */,
 				CC06ABE31892F7FD00E05422 /* Images.xcassets in Resources */,
 				CC06ABD51892F7FD00E05422 /* InfoPlist.strings in Resources */,
@@ -312,7 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC06ABD71892F7FD00E05422 /* main.m in Sources */,
+				CC2B4B881894003F00B79EA0 /* SBAddViewController.m in Sources */,
 				CC06ABDB1892F7FD00E05422 /* SBAppDelegate.m in Sources */,
+				CC0B0F1B1894031D00A3EF01 /* SBAboutViewController.m in Sources */,
 				CC06ABE11892F7FD00E05422 /* SBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

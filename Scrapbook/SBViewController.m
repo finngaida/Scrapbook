@@ -19,6 +19,33 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(storeDidChange:) name:NSUbiquitousKeyValueStoreDidChangeExternallyNotification object:nil];
     store = [NSUbiquitousKeyValueStore defaultStore];
     [store synchronize];
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"bar"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor redColor]];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
+    title.backgroundColor = [UIColor clearColor];
+    title.textColor = [UIColor whiteColor];
+    title.textAlignment = NSTextAlignmentCenter;
+    title.numberOfLines = 0;
+    title.font = [UIFont fontWithName:@"Brain Flower" size:35];
+    title.text = NSLocalizedString(@"SCRAPBOOK", nil);
+    [self.navigationItem setTitleView:title];
+    
+    [self navigationItem].rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showAddScreen)];
+    [self navigationItem].leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(showAboutScreen)];
+    [self navigationItem].leftBarButtonItem.title = @"About";
+}
+
+- (void)showAddScreen {
+    SBAddViewController *add = [[SBAddViewController alloc] init];
+    [self.navigationController pushViewController:add animated:YES];
+}
+
+- (void)showAboutScreen {
+    SBAboutViewController *about = [self.storyboard instantiateViewControllerWithIdentifier:@"about"];
+    [self.navigationController pushViewController:about animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {[super didReceiveMemoryWarning];}
