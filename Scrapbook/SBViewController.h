@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SBViewController : UIViewController
+@interface SBViewController : UIViewController <UITableViewDataSource,  UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *inputField;
 @property (weak, nonatomic) IBOutlet UILabel *outputlabel;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)fetch:(id)sender;
 - (IBAction)send:(id)sender;
 
